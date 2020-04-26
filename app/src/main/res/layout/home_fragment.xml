@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:scrollbars="none"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/topColor"
+        >
+
+        <ImageView
+            android:id="@+id/imgProfile"
+            android:layout_width="61dp"
+            android:layout_height="61dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_profile"
+            />
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/welcome_title_text"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/imgProfile"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/imgProfile"
+            app:layout_constraintTop_toTopOf="@id/imgProfile" />
+
+        <TextView
+            android:id="@+id/tvSubTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/welcome_subTitle_text"
+            app:layout_constraintTop_toBottomOf="@id/tvTitle"
+            app:layout_constraintStart_toStartOf="@id/tvTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp"
+            android:textColor="@android:color/white"
+            />
+        <TextView
+            android:id="@+id/tvUpdateStatus"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/update_status_text"
+            app:layout_constraintTop_toBottomOf="@id/tvSubTitle"
+            app:layout_constraintStart_toStartOf="@id/tvTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="04dp"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"
+            />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="26dp"
+                app:layout_constraintTop_toBottomOf="@id/tvUpdateStatus"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:background="@drawable/bottom_nav_background"
+                android:backgroundTint="@color/backgroundColor"
+                >
+
+                <TextView
+                    android:id="@+id/tvMonitor"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    android:text="@string/monitor_your_health_status_text"
+                    android:layout_marginTop="24dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="16sp"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvHealth"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="16dp"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintEnd_toStartOf="@+id/cvSymptom"
+                    app:layout_constraintTop_toBottomOf="@id/tvMonitor"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:cardCornerRadius="@dimen/cardView_default_radius"
+                    app:cardElevation="@dimen/cardview_default_elevation"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="16dp"
+                        android:paddingBottom="16dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/imgHeart"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_heart_main"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="@id/tvHeart"
+                            app:layout_constraintStart_toStartOf="@id/tvHeart"
+                            app:layout_constraintBottom_toTopOf="@id/tvHeart"
+                            android:scaleType="centerCrop"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvHeart"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            app:layout_constraintTop_toBottomOf="@id/imgHeart"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_marginStart="08dp"
+                            android:layout_marginEnd="08dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="@string/heart_text"
+                            android:textSize="13sp"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvSymptom"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginStart="16dp"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintTop_toTopOf="@id/cvHealth"
+                    app:layout_constraintBottom_toBottomOf="@id/cvHealth"
+                    app:layout_constraintStart_toEndOf="@+id/cvHealth"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:cardCornerRadius="@dimen/cardView_default_radius"
+                    app:cardElevation="@dimen/cardview_default_elevation"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="16dp"
+                        android:paddingTop="16dp"
+                        >
+
+                        <ImageView
+                            android:id="@+id/imgSymptom"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_symtoms"
+                            android:layout_marginTop="16dp"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintEnd_toEndOf="@id/tvSymptom"
+                            app:layout_constraintStart_toStartOf="@id/tvSymptom"
+                            app:layout_constraintBottom_toTopOf="@id/tvSymptom"
+                            android:scaleType="centerCrop"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvSymptom"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/imgSymptom"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            android:layout_marginStart="08dp"
+                            android:layout_marginEnd="08dp"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:text="@string/symptom_text"
+                            android:textSize="13sp"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+
+                <TextView
+                    android:id="@+id/tvTalk"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toBottomOf="@id/cvHealth"
+                    app:layout_constraintStart_toStartOf="@id/tvMonitor"
+                    app:layout_constraintEnd_toEndOf="@id/tvMonitor"
+                    android:text="@string/talk_text"
+                    android:layout_marginTop="24dp"
+                    android:textSize="16sp"
+                    />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvCall"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/tvTalk"
+                    app:layout_constraintStart_toStartOf="@id/tvTalk"
+                    app:layout_constraintEnd_toEndOf="@id/tvTalk"
+                    app:cardCornerRadius="@dimen/cardView_default_radius"
+                    app:cardElevation="@dimen/cardview_default_elevation"
+                    >
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imgEmergency"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_emergency"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginStart="24dp"
+                            android:scaleType="centerCrop"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvEmergency"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            app:layout_constraintTop_toTopOf="@id/imgEmergency"
+                            app:layout_constraintBottom_toBottomOf="@id/imgEmergency"
+                            app:layout_constraintStart_toEndOf="@id/imgEmergency"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:text="@string/emergency_text"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cvOperator"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="16dp"
+                    app:layout_constraintTop_toBottomOf="@id/cvCall"
+                    app:layout_constraintStart_toStartOf="@id/tvTalk"
+                    app:layout_constraintEnd_toEndOf="@id/tvTalk"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:cardCornerRadius="@dimen/cardView_default_radius"
+                    app:cardElevation="@dimen/cardview_default_elevation"
+                    >
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/imgCall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/ic_call"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            android:layout_marginTop="16dp"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginStart="24dp"
+                            android:scaleType="centerCrop"
+                            />
+
+                        <TextView
+                            android:id="@+id/tvCall"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            app:layout_constraintTop_toTopOf="@id/imgCall"
+                            app:layout_constraintBottom_toBottomOf="@id/imgCall"
+                            app:layout_constraintStart_toEndOf="@id/imgCall"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            android:text="@string/call_text"
+                            />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

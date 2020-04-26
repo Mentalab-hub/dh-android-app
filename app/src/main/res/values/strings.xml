@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">Digital Hospital</string>
+
+    <!-- Menu strings -->
+    <string name="home">Home</string>
+    <string name="info">Info</string>
+    <string name="contact">Contact</string>
+    <string name="settings">Settings</string>
+
+    <!-- Screen strings -->
+    <string name="home_fragment_text">Main Fragment</string>
+    <string name="info_fragment_text">Info Fragment</string>
+    <string name="contact_fragment_text">Contact Fragment</string>
+    <string name="settings_fragment_text">Under Development!</string>
+    <string name="welcome_title_text">Hi Karl, Welcome back</string>
+    <string name="welcome_subTitle_text">How do you feel today?</string>
+    <string name="update_status_text"><u>Update your health status</u></string>
+    <string name="monitor_your_health_status_text">Monitor your health status</string>
+    <string name="talk_text">Talk to someone</string>
+    <string name="emergency_text">Call Emergency</string>
+    <string name="call_text">Contact Operator</string>
+    <string name="heart_text">View your\nhealth information</string>
+    <string name="symptom_text">Analyse\nyour symptoms</string>
+    <string name="your_info_text">Your Information</string>
+    <string name="name_text">Karl Patatino</string>
+    <string name="age_text">57</string>
+    <string name="vital_signs_text">Vital Signs</string>
+    <string name="sp_text">SPO2(%)</string>
+    <string name="sp_value_text">96%</string>
+    <string name="status_good_text">Status: Good</string>
+    <string name="bpm_text">BPM</string>
+    <string name="bpm_value_text">75</string>
+    <string name="RR_text">RR</string>
+    <string name="RR_value_text">10</string>
+    <string name="ECG_text">ECG</string>
+    <string name="status_stable_text">Status: Stable</string>
+    <string name="operator_name_text">Jane</string>
+    <string name="operator_text">Operator</string>
+    <string name="call_operator_text">Call Operator</string>
+    <string name="dialog_subTitle_text">A message should be a short sentence.</string>
+    <string name="call_now_text">Call now</string>
+    <string name="chat_text">Chat</string>
+    <string name="chat_placeholder_text">Type your message here</string>
+
+    <!--Watson Assistant service credentials-->
+
+    <!-- ID of the Assistant to use -->
+    <string name="assistant_id">c9553aa3-2a96-4f9e-8adb-5d504ea1cc9b</string>
+
+    <!-- Watson Assistant service API Key-->
+    <string name="assistant_apikey">FlKSMU_CbtuuvyGqQm6am5qMzHTRswLxWKp-ljVqCQtW</string>
+
+    <!-- URL assistant service needed -->
+    <string name="assistant_url">https://api.eu-gb.assistant.watson.cloud.ibm.com/instances/1783c9ef-16d7-4247-b3dd-0c9e2e66a26f</string>
+    <string name="chat_operator_text">Chat now</string>
+    <string name="or_text">OR</string>
+    <string name="default_contact_text">+000</string>
+
+</resources>
