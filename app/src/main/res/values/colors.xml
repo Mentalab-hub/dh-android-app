@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1C71F2</color>
+    <color name="colorPrimaryDark">#1C71F2</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="InactiveBottomNavIconColor">#666666</color>
+    <color name="backgroundColor">#E4F5FF</color>
+    <color name="topColor">#03256C</color>#DD4339
+    <color name="ECGColor">#DD4339</color>
+    <color name="border_color">#4A3C3C43</color>
+    <color name="dialog_color">#F8F8F8</color>
+
+
+     <!--  chat colors  -->
+    <color name="bg_bubble_self">#62caa6</color>
+    <color name="bg_bubble_bot">#ecf0f1</color>
+</resources>

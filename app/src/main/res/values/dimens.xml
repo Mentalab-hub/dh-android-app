@@ -1,0 +1,6 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Default screen margins, per the Android Design guidelines. -->
+
+    <dimen name="cardView_default_radius">08dp</dimen>
+    <dimen name="cardView_default_elevation">2dp</dimen>
+</resources>
